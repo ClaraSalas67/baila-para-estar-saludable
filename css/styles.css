@@ -1,0 +1,39 @@
+section {
+    padding: 80px 0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.seccion {
+    display: none;
+}
+
+.titulo-navbar {
+    font-style: italic;
+}
+
+.navbar-custom {
+    background-color: #2C5F34;
+}
+
+.carousel-caption {
+    background: rgba(11, 156, 49, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    top: 10px;
+    bottom: auto;
+    font-weight: bold;
+}
+
+.carousel-item img {
+    height: 800px;
+    object-fit: contain;
+    background: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
