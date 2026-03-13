@@ -37,3 +37,8 @@ body {
 .carousel-control-next-icon {
     filter: invert(1);
 }
+
+#intro {
+max-width: 900px;
+margin: auto;
+}

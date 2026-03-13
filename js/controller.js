@@ -1,19 +1,20 @@
-async function cargarVista(ruta){
+async function cargarVista(ruta) {
     const res = await fetch(ruta);
     return await res.text();
 }
 
-async function iniciar(){
+async function iniciar() {
 
     const navbar = await cargarVista("views/navbar.html");
     document.getElementById("navbar").innerHTML = navbar;
 
     crearMenu();
     crearSecciones();
-    mostrarSeccion(secciones[0].recursos[0].id);
+    //mostrarSeccion(secciones[0].recursos[0].id);
+    mostrarSeccion("intro");
 }
 
-function crearMenu(){
+function crearMenu() {
 
     const menu = document.getElementById("menu");
 
@@ -56,7 +57,7 @@ function crearMenu(){
 
 }
 
-function crearSecciones(){
+function crearSecciones() {
 
     const contenido = document.getElementById("contenido");
 
@@ -68,7 +69,7 @@ function crearSecciones(){
 
             recurso.imagenes.forEach((imagen, i) => {
 
-            slides += `
+                slides += `
             <div class="carousel-item ${i === 0 ? "active" : ""}">
 
             <img src="${imagen.src}" class="d-block w-100">
@@ -125,15 +126,13 @@ function crearSecciones(){
 
 }
 
-function mostrarSeccion(id){
+function mostrarSeccion(id) {
 
-const secciones = document.querySelectorAll(".seccion");
+    document.querySelectorAll("#contenido section").forEach(sec => {
+        sec.style.display = "none";
+    });
 
-secciones.forEach(sec => {
-sec.style.display = "none";
-});
-
-document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "block";
 
 }
 
