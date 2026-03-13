@@ -1,7 +1,7 @@
 const secciones = [
 {
     id: "fase1",
-    titulo: "Fase 1",
+    titulo: "Fase 1 - Actividades previas",
     recursos: [
         {
             id: "materiales-f1",
@@ -70,49 +70,125 @@ const secciones = [
         {
             id: "humanos-f1",
             titulo: "Recursos Humanos",
-            imagenes: ["img/f1_hum_1.jpg","img/f1_hum_2.jpg","img/f1_hum_3.jpg"]
+            imagenes: [
+                {
+                    src: "img/f1_hum_1.jpeg",
+                    texto: "Responsable del Proyecto - Clara Salas"
+                },
+                {
+                    src: "img/f1_hum_2.jpeg",
+                    texto: "Voluntarios"
+                },
+                {
+                    src: "img/f1_hum_3.jpeg",
+                    texto: "Comité vecinal"
+                }
+            ]
         }
     ]
 },
 {
     id: "fase2",
-    titulo: "Fase 2",
+    titulo: "Fase 2 - Actividades de desarrollo",
     recursos: [
-        {
-            id: "financieros-f2",
-            titulo: "Recursos Financieros",
-            imagenes: ["img/f2_fin_1.jpg","img/f2_fin_2.jpg","img/f2_fin_3.jpg"]
-        },
         {
             id: "materiales-f2",
             titulo: "Recursos Materiales",
-            imagenes: ["img/f2_mat_1.jpg","img/f2_mat_2.jpg","img/f2_mat_3.jpg"]
+            imagenes: [
+                {
+                    src: "img/f1_mat_7.png",
+                    texto: "Bocina"
+                },
+                {
+                    src: "img/f1_mat_4.png",
+                    texto: "Agua"
+                },
+                {
+                    src: "img/f2_mat_1.jpg",
+                    texto: "Música"
+                }
+            ]
+                
+        },
+        {
+            id: "tecnologicos-f2",
+            titulo: "Recursos Tecnológicos",
+            imagenes: [
+                {
+                    src: "img/f2_tec_1.jpg",
+                    texto: "Reproductor de música"
+                }
+            ]
+        },
+        {
+            id: "financieros-f2",
+            titulo: "Recursos Financieros",
+            imagenes: [
+                {
+                    src: "img/f2_fin_1.png",
+                    texto: "Budget"
+                }
+            ]
         },
         {
             id: "humanos-f2",
             titulo: "Recursos Humanos",
-            imagenes: ["img/f2_hum_1.jpg","img/f2_hum_2.jpg","img/f2_hum_3.jpg"]
+            imagenes: [
+                {
+                    src: "img/f2_hum_1.jpeg",
+                    texto: "Instructor de baile"
+                }
+            ]
         }
     ]
 },
 {
     id: "fase3",
-    titulo: "Fase 3",
+    titulo: "Fase 3 - Actividades de concreción",
     recursos: [
-        {
-            id: "financieros-f3",
-            titulo: "Recursos Financieros",
-            imagenes: ["img/f3_fin_1.jpg","img/f3_fin_2.jpg","img/f3_fin_3.jpg"]
-        },
         {
             id: "materiales-f3",
             titulo: "Recursos Materiales",
-            imagenes: ["img/f3_mat_1.jpg","img/f3_mat_2.jpg","img/f3_mat_3.jpg"]
+            imagenes: [
+                {
+                    src: "img/f1_mat_1.jpg",
+                    texto: "Hojas"
+                },
+                {
+                    src: "img/f1_mat_3.jpg",
+                    texto: "Plumas"
+                }
+            ]
+        },
+        {
+            id: "tecnologicos-f3",
+            titulo: "Recursos Tecnológicos",
+            imagenes: [
+                {
+                    src: "img/f1_tec_1.jpg",
+                    texto: "Computadora"
+                }
+            ]
+        },
+        {
+            id: "financieros-f3",
+            titulo: "Recursos Financieros",
+            imagenes: [
+                {
+                    src: "img/f3_fin_1.png",
+                    texto: "Budget"
+                }
+            ]
         },
         {
             id: "humanos-f3",
             titulo: "Recursos Humanos",
-            imagenes: ["img/f3_hum_1.jpg","img/f3_hum_2.jpg","img/f3_hum_3.jpg"]
+            imagenes: [
+                {
+                    src: "img/f1_hum_1.jpg",
+                    texto: "Responsable del Proyecto"
+                }
+            ]
         }
     ]
 }
